@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ParticleEffect from "./minor/ParticleEffect";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import image from "../assets/Foto Diri.jpg"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const About = () => {
@@ -21,7 +22,7 @@ const About = () => {
       <div className="hero-content flex-col lg:flex-row ">
         {imageLoaded && (
           <motion.img
-            src="/src/assets/Foto Diri.jpg"
+            src={image}
             className="bg-white aspect-square object-cover w-[70%] lg:w-[40%]   mask mask-squircle"
             initial={{
               opacity: 0,

@@ -3,27 +3,30 @@ import { motion, AnimatePresence, useMotionValue, useTransform, useScroll, useMo
 import FeatureTitle from "./FeatureTitle";
 import ParticleEffect from "./minor/ParticleEffect";
 import { useRef } from "react";
-
+import image1 from '../assets/logo-kbmpti.png'
+import image2 from '../assets/logo-uab.png'
+import image3 from '../assets/logo-kbmdsi.png'
+import image4 from '../assets/logo_filkom.png'
 const FeatureScroll = () => {
   const data = [
     {
       id: 1,
       title: "KBMDSI WEBSITE",
-      imageUrl: "/src/assets/riski1.jpg",
+      imageUrl: image1,
       description:
         "nesciunt tempore officiis temporibus facere quasi obcaecati possimus? Cumque officiis natus vero accusantium laudantium consequuntur necessitatibus nihil ex explicabo. Delectus magni unde quod modi, consequuntur tempora libero quibusdam earum ",
     },
     {
       id: 2,
       title: "JALAN KODEKU",
-      imageUrl: "/src/assets/Foto Diri.jpg",
+      imageUrl: image2,
       description:
         " Optio odio non totam molestiae vitae fuga voluptas sint asperiores officiis excepturi sed, ut dignissimos illo unde, similique ducimus? Reiciendis, dicta ad natus nisi totam eveniet itaque at molestias deserunt repudiandae saepe mollitia! Corrupti expedita quisquam omnis nulla, et asperiores. Necessitatibus obcaecati iusto ducimus?",
     },
     {
       id: 3,
       title: "N BLOG",
-      imageUrl: "/src/assets/bg.png",
+      imageUrl: image3,
       description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed modi perspiciatis error. Doloribus, aliquam hic ex,  ",
     },
   ];

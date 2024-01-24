@@ -1,5 +1,9 @@
 import React, { useRef } from "react";
 import { motion, AnimatePresence, useMotionValue, useTransform, useScroll, useMotionValueEvent, useSpring } from "framer-motion";
+import image1 from '../assets/logo-kbmpti.png'
+import image2 from '../assets/logo-uab.png'
+import image3 from '../assets/logo-kbmdsi.png'
+import image4 from '../assets/logo_filkom.png'
 
 const Carousel = () => {
   const data = [
@@ -8,7 +12,7 @@ const Carousel = () => {
       title: "KBMPTI FILKOM UB",
       year:'September 2022 - Desember 2022',
       as: 'Informatics Intern Staff Division of Puskominfo Departement',
-      imageUrl: "/src/assets/logo-kbmpti.png",
+      imageUrl: image1,
       description:
         "As an intern, I learned about the basics of web development, guided and directed by a mentor, apart from that, I also learned about time management and the organization itself.",
     },
@@ -17,7 +21,7 @@ const Carousel = () => {
       title: "UAB Universitas Brawijaya",
       year:'Januari 2023 - Desember 2023',
       as:'Staff of Music division',
-      imageUrl: "/src/assets/logo-uab.png",
+      imageUrl: image2,
       description:
         " Becomes the person responsible for running the indie band formation work program, then becomes part of the committee for homeband player auditions. As well as being a member of an indie pop punk band based in Malang called Purple Haze",
     },
@@ -26,7 +30,7 @@ const Carousel = () => {
       title: "KBMDSI FILKOM UB",
       year:'Januari 2023 - Desember 2023',
       as: "Informatics Staff Division of Medkominfo Departement",
-      imageUrl: "/src/assets/logo-kbmdsi.png",
+      imageUrl: image3,
       description: "Being part of developing the organization's website, where I was responsible for the front end, and responsible for uploading content on the web in the field of advocacy and then became the interim Head of Informatics and became a Mentor for intern staff in the Informatics Division",
     },
     {
@@ -34,7 +38,7 @@ const Carousel = () => {
       title: "Faculty of Computer Science (FILKOM)",
       year:'Agustus 2023 - Desember 2023',
       as: "Practicum Assistant : Basic Programming",
-      imageUrl: "/src/assets/logo_filkom.png",
+      imageUrl: image4,
       description: "As a practicum assistant I have succeeded in Taught 37 students about basic Java programming,Organize and facilitate practicum sessions to apply basic programming concepts in assignments and projects and Providing an assessment of student practicum reports.",
     },
     {
@@ -42,7 +46,7 @@ const Carousel = () => {
       title: "LKMM TD DSI FILKOM 2023",
       year:'September 2023 - November 2023',
       as: "Head of the Field Responsible Division",
-      imageUrl: "/src/assets/logo-kbmdsi.png",
+      imageUrl: image4,
       description: "My role is to determine the success and smooth implementation of the event. My responsibilities include forming and dividing facility groups with each facilitator and establishing security, then being responsible for leading and supervising each staff and the orderliness and smooth running of OSPEK program events, coordination with team members, effective communication. My main goal is to guide the course of this event by providing a positive and memorable OSPEK experience for all new students in the department.",
     },
     
