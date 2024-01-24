@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Monomaniac+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+@layer base {
+  .font-outline-1 {
+    -webkit-text-stroke: 1px #ffbe00;
+  }
+  .font-outline-2 {
+    -webkit-text-stroke: 2px black;
+  }
+  .font-outline-3 {
+    -webkit-text-stroke: 3px whitesmoke;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 3px black;
+  }
+}
+
+.bg-img{
+background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+
+}
+.bg-1{
+  background-image: url('https://source.unsplash.com/random/1280×720/?html');
+  background-position: center;
+  background-size: cover;
+}
+.bg-2{
+  background-image: url('https://source.unsplash.com/random/1280×720/?css');
+  background-position: center;
+  background-size: cover;
+}
+.bg-3{
+  background-image: url('https://source.unsplash.com/random/1280×720/?javascript');
+  background-position: center;
+  background-size: cover;
+}
+.bg-4{
+  background-image: url('https://source.unsplash.com/random/1280×720/?react');
+  background-position: center;
+  background-size: cover;
+}
+.bg-5{
+  background-image: url('https://source.unsplash.com/random/1280×720/?tailwind');
+  background-position: center;
+  background-size: cover;
+}
+.bg-6{
+  background-image: url('https://source.unsplash.com/random/1280×720/?boostrap');
+  background-position: center;
+  background-size: cover;
+}
