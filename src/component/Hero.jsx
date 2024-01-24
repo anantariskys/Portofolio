@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ParticleEffect from "../component/minor/ParticleEffect";
 import TypeWriter from "./minor/TypeWriter";
-import heroImage from "../assets/IMG_9923.jpg"
+import heroImage from "../assets/IMG_9923.JPG"
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
