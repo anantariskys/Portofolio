@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ParticleEffect from "../component/minor/ParticleEffect";
 import TypeWriter from "./minor/TypeWriter";
-import heroImage from "/src/assets/IMG_9923.JPG"
+import heroImage from "../assets/IMG_9923.JPG"
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,7 +11,7 @@ const Hero = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
   useEffect(() => {
     const img = new Image();
-    img.src = "/src/assets/IMG_9923.JPG";
+    img.src = heroImage;
     img.onload = () => {
       setImageLoaded(true);
     };
