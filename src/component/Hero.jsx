@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ParticleEffect from "../component/minor/ParticleEffect";
 import TypeWriter from "./minor/TypeWriter";
-
+import heroImage from "/src/assets/IMG_9923.JPG"
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="hero-content flex-col lg:flex-row-reverse ">
         {imageLoaded && (
           <motion.img
-            src="/src/assets/IMG_9923.JPG"
+            src={heroImage}
             className="bg-white aspect-square object-cover w-[70%] lg:w-[40%]   mask mask-squircle"
             initial={{
               opacity: 0,
