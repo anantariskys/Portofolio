@@ -106,7 +106,20 @@ const FeatureScroll = () => {
   return (
     <div className="w-full pt-20 ">
       <motion.div className="bg-warning-content h-1  fixed bottom-0 left-0 " style={{ width: scaleX, opacity: scaleX }}></motion.div>
-      <h1 className="text-center font-Leckerli-One text-7xl font-black text-warning-content">MY PROJECT</h1>
+      <motion.h1 className="text-center font-Leckerli-One text-4xl md:text-7xl font-black text-warning-content"
+        initial={{
+          opacity: 0,
+          y:-300
+        }}
+        animate={{
+          opacity: 1,
+          y:0
+        }}
+        transition={{
+          duration: 1,
+          delay: 1.5,
+        }}
+      >MY PROJECT</motion.h1>
 
       <div className="flex flex-col-reverse lg:flex-row items-start">
         <div ref={targetRef} className="w-full py-[50vh] flex justify-center font-black ">
@@ -133,7 +146,18 @@ const FeatureScroll = () => {
           </motion.ul>
         </div>
         <div className="sticky top-0 overflow-hidden flex w-full px-5 h-screen  lg:py-0 py-16 items-center justify-center">
-          <div className="card md:w-3/5 w-[90%] bg-neutral-content backdrop-blur-sm  bg-opacity-20">
+          <motion.div className="card md:w-3/5 w-[90%] bg-neutral-content backdrop-blur-sm  bg-opacity-20"
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1,
+              delay: 1.5,
+            }}
+          >
             <figure>
               <div className="mockup-browser border border-base-300 bg-neutral-content">
                 <div className="mockup-browser-toolbar">
@@ -197,7 +221,7 @@ const FeatureScroll = () => {
                 </div>
               </dialog>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

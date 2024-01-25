@@ -48,10 +48,10 @@ const Navbar = () => {
             <li><NavLink to='/experience' >Experience</NavLink></li>
             <li><NavLink to='/project' >Project</NavLink></li>
             <li><NavLink to='/skill' >Skills</NavLink></li>
-            <li><NavLink to='/socialMedia' >Social Media</NavLink></li>
+            <li><NavLink to='/contact' >Contact</NavLink></li>
           </ul>
         </div>
-        <NavLink to='' className="btn btn-ghost text-xl" >Ananta Risky Susanto</NavLink>
+        <button className="btn btn-ghost text-xl" >Ananta Risky Susanto</button>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal gap-1 text-lg px-1">
@@ -60,7 +60,7 @@ const Navbar = () => {
           <li><NavLink to='/experience' >Experience</NavLink></li>
           <li><NavLink to='/project' >Project</NavLink></li>
           <li><NavLink to='/skill' >Skills</NavLink></li>
-          <li><NavLink to='/socialMedia' >Social Media</NavLink></li>
+          <li><NavLink to='/contact' >Contact</NavLink></li>
         </ul>
       </div>
       <div className="navbar-end"></div>

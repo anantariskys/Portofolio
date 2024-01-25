@@ -18,7 +18,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/project" element={<Project />} />
-        <Route path="/socialMedia" element={<SocialMedia />} />
+        <Route path="/contact" element={<SocialMedia />} />
         <Route path="/skill" element={<Skill />} />
       </Routes>
     </BrowserRouter>

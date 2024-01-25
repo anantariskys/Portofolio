@@ -4,6 +4,8 @@ import ParticleEffect from "./minor/ParticleEffect";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import image from "../assets/ananta.jpg"
 
+import { Link } from "react-router-dom";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const About = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -32,7 +34,7 @@ const About = () => {
             }}
             transition={{
               duration: 1,
-              delay: 1.55,
+              delay: 1,
             }}
           />
         )}
@@ -72,6 +74,7 @@ const About = () => {
             I am a student studying Information Technology Education at the Faculty of Computer Science, Brawijaya University. I have an interest in programming, web development and related fields. My academic endeavors have given me a deep understanding of education and computer science. I have translated theoretical knowledge into practical skills through my role as a practicum assistant. Additionally, my involvement in various campus organizations has enriched my skills and knowledge, strengthening my readiness to excel in a variety of IT-related roles.
          
           </motion.p>
+          <Link to={'/contact'}>
           <motion.button
             className="btn  text-lg   px-8"
             initial={{
@@ -91,6 +94,7 @@ const About = () => {
           >
             Contact Me<FontAwesomeIcon icon={faPhone} />
           </motion.button>
+          </Link>
         </div>
       </div>
     </div>

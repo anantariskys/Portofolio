@@ -68,12 +68,36 @@ const Carousel = () => {
 
   return (
     <>
-      <h1 className="font-Leckerli-One text-3xl md:text-6xl font-bold">My experience</h1>
+      <motion.h1 className="font-Leckerli-One text-3xl md:text-6xl font-bold"
+        initial={{
+          opacity: 0,
+          y:-300
+        }}
+        animate={{
+          opacity: 1,
+          y:0
+        }}
+        transition={{
+          duration: 1,
+          delay: 1.5,
+        }}
+      >My experience</motion.h1>
       <motion.div className="bg-warning-content rounded-sm w-1   fixed bottom-0 left-0 " style={{ height: scaleX, opacity: scaleX }}></motion.div>
       <motion.div className="bg-warning-content rounded-sm w-1   fixed top-0 right-0 " style={{ height: scaleX, opacity: scaleX }}></motion.div>
       <motion.div className="bg-warning-content rounded-sm h-1   fixed left-0 top-0 " style={{ width: scaleX, opacity: scaleX }}></motion.div>
       <motion.div className="bg-warning-content rounded-sm h-1   fixed bottom-0 right-0 " style={{ width: scaleX, opacity: scaleX }}></motion.div>
-      <div ref={targetRef} className="lg:h-[35dvw] h-[75dvh] lg:w-auto w-[80dvw] mx-auto lg:aspect-video   carousel carousel-vertical rounded-box">
+      <motion.div ref={targetRef} className="lg:h-[35dvw] h-[75dvh] lg:w-auto w-[80dvw] mx-auto lg:aspect-video   carousel carousel-vertical rounded-box"
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 1.3,
+          delay: 1.5,
+        }}
+      >
         {data.map((item) => (
           <div autoFocus key={item.id} className="carousel-item h-full">
             <div className="card lg:card-side card-compact pt-1 lg:pt-0 md:card-normal lg:divide-x-4 divide-neutral bg-neutral-content bg-opacity-20 backdrop-blur-sm">
@@ -90,7 +114,7 @@ const Carousel = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </>
   );
 };

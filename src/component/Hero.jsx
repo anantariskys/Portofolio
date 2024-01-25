@@ -5,6 +5,8 @@ import TypeWriter from "./minor/TypeWriter";
 import heroImage from "../assets/IMG_9923.JPG"
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 
+import CV from '../assets/CV.pdf'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Hero = () => {
@@ -91,7 +93,7 @@ const Hero = () => {
           >
             <TypeWriter></TypeWriter>
           </motion.p>
-          <motion.button
+          <motion.a
             className="btn  text-lg   px-8"
             initial={{
               opacity: 0,
@@ -107,9 +109,11 @@ const Hero = () => {
               duration: 1,
               delay: 1.5,
             }}
+
+            href={CV}
           >
             Download CV<FontAwesomeIcon icon={faFile} />
-          </motion.button>
+          </motion.a>
         </div>
       </div>
     </div>
