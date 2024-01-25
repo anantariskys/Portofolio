@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ParticleEffect from "./minor/ParticleEffect";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import image from "../assets/Foto Diri.jpg"
+import image from "../assets/ananta.jpg"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const About = () => {
@@ -10,7 +10,7 @@ const About = () => {
 
   useEffect(() => {
     const img = new Image();
-    img.src = "/src/assets/Foto Diri.jpg";
+    img.src = image;
     img.onload = () => {
       setImageLoaded(true);
     };
